@@ -1,0 +1,150 @@
+
+body {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    margin: 20px;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 6em);
+    gap: 250px 0px; 
+    grid-template-areas: 
+      "box1 box2 box3 box4"
+      "box5 box6 box7 box8"
+      "box9 box10 box11 box12";  
+    transition: 0.5s ease-in-out all;
+}
+#box1 {
+    grid-area: box1;
+}
+#box2 {
+    grid-area: box2;
+}
+#box3 {
+    grid-area: box3;
+}
+#box4 {
+    grid-area: box4;
+}
+#box5 {
+    grid-area: box5;
+}
+#box6 {
+    grid-area: box6;
+}
+#box7 {
+    grid-area: box7;
+}
+#box8 {
+    grid-area: box8;
+}
+#box9 {
+    grid-area: box9;
+}
+#box10 {
+    grid-area: box10;
+}
+#box11 {
+    grid-area: box11;
+}
+#box12 {
+    grid-area: box12;
+}
+.div1 {
+    display: flex;
+    text-align: center;
+    width: 1400px;
+    align-items: center;
+    margin: auto;
+    justify-content: flex-start;
+}
+.div2 {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section {
+    padding: 10px;
+}
+img {
+    height: 230px;
+    box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.558);
+    border-radius: 20px;
+    transition: 0.4s;
+}
+img:hover {
+    box-shadow:  0px 10px 50px 10px rgb(0, 0, 0);
+    transform: scale(1.10); 
+}
+a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.titulo1 {
+   padding-top: -5px;
+   text-align: left ;
+   font-family: system-ui;
+   font-weight: bold;
+   font-size: 15px;  
+   color: rgba(0, 0, 0, 0.634);
+   padding-left: 20px;
+   width: 120px;
+}
+label {
+    text-align: left ;
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 10px;  
+    width: 120px;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.505);
+}
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 20px;
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(6, 6em);
+        gap: 250px 0px; 
+        grid-template-areas: 
+          "box1 box2"
+          "box3 box4"
+          "box5 box6"
+          "box7 box8"
+          "box9 box10"
+          "box11 box12"; 
+          transition: 0.5s ease-in-out all; 
+    }
+}
+@media screen and (max-width: 425px) {
+    .container {
+        margin: 20px;
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(12, 6em);
+        gap: 250px 0px; 
+        grid-template-areas: 
+          "box1"
+          "box2"
+          "box3"
+          "box4"
+          "box5"
+          "box6"
+          "box7"
+          "box8"
+          "box9"
+          "box10"
+          "box11"  
+          "box12";  
+    }
+}
